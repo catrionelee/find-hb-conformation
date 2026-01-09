@@ -42,3 +42,8 @@ python hb_conform_finder.py -i /path/to/structure_0.cif -o my_structure_0.txt
 This will create a file called `my_structure_0.txt` that will contain either `T-state`, `R-state`, `R2-state` or `ERROR`. If an error occurs, this was not a good Hb structure to determine its conformational state. Make sure to make a unique name for your output that you can recognize later (don't re-use the same filename).
 
 If a large error occured, call Catrione... its a big fix.
+
+
+# Generating a T-state hemoglobin
+
+I have found that if AlphaFold doesn't produce a sequence that adding 16 Na+ (sodium ions) to the job, will mimic the addition of protons therefore stabilizing the T-state. And then a T-state can be determined.
